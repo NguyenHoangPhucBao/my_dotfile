@@ -1,12 +1,11 @@
 return {
-	ensure_installed = {
-		"lua",
-		"typescript",
-		"typescriptreact",
-		"javascript",
-		"javascriptreact",
-		"luadoc",
-		"json",
-		"prisma",
-	},
+  ensure_installed = {
+    "lua",
+    "typescript",
+    "tsx",
+    "javascript",
+    "luadoc",
+    "json",
+    "prisma",
+  },
 }
