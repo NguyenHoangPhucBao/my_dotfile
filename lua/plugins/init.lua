@@ -120,20 +120,20 @@ return {
 
   --mason
   {
-  	"mason-org/mason.nvim",
-  	cmd = { "Mason", "MasonInstall", "MasonUpdate" },
-  	config = function()
-  		return require("config.plugins.mason")
-  	end,
+    "mason-org/mason.nvim",
+    cmd = { "Mason", "MasonInstall", "MasonUpdate" },
+    config = function()
+      return require("config.plugins.mason")
+    end,
   },
 
   --Mason lspconfig
   {
-  	"mason-org/mason-lspconfig.nvim",
-  	lazy = false,
-  	config = function()
-  		return require("config.plugins.mason-lsp")
-  	end,
+    "mason-org/mason-lspconfig.nvim",
+    lazy = false,
+    config = function()
+      return require("config.plugins.mason-lsp")
+    end,
   },
 
   --Cmp
@@ -209,5 +209,20 @@ return {
         },
       })
     end,
+  },
+
+  --Comment.nvim
+  {
+    "numToStr/Comment.nvim",
+    opts = {}
+  },
+
+  --ts-error-translator.nvim
+  {
+    "dmmulroy/ts-error-translator.nvim",
+    lazy = false,
+    config = function()
+      require("ts-error-translator").setup()
+    end
   },
 }

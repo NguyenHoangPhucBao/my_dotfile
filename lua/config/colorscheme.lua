@@ -1,5 +1,5 @@
 local hl = function(grp, opts)
-	return vim.api.nvim_set_hl(0, grp, opts)
+  return vim.api.nvim_set_hl(0, grp, opts)
 end
 
 hl("NvimTreeGitNewIcon", { fg = "#389636" })

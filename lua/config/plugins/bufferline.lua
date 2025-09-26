@@ -1,5 +1,5 @@
 local bufline = require("bufferline")
-return bufline.setup{
+return bufline.setup {
   options = {
     themable = true,
     color_icons = true,
@@ -7,7 +7,9 @@ return bufline.setup{
     tab_size = 20,
     enforce_regular_tabs = true,
     show_buffer_close_icons = true,
+    show_duplicate_prefix = true,
     sort_by = "extensions",
+    separator_style = "thin",
     indicator = {
       icon = "",
       style = 'icon',
@@ -15,11 +17,12 @@ return bufline.setup{
     hover = {
       enabled = true,
       delay = 10,
-      reveal = {'close'}
+      reveal = { 'close' }
     },
     style_preset = {
       bufline.style_preset.no_italic
     },
+    truncate_names = false,
   },
   highlights = {
     buffer_selected = {
