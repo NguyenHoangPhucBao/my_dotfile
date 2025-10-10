@@ -136,6 +136,12 @@ return {
     end,
   },
 
+  --LSP config
+  {
+    "neovim/nvim-lspconfig",
+    lazy = false,
+  },
+
   --Cmp
   {
     "hrsh7th/nvim-cmp",

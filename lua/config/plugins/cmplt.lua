@@ -108,16 +108,16 @@ cmp.setup({
     { name = "nvim_lsp_signature_help", priority = 200 },
   }),
   formatting = {
-      format = function(entry, item)
-        local icons = lspkind_icons
-        local icon = icons[item.kind] or ""
-        local kind = item.kind or ""
-        item.menu = kind
-        item.menu_hl_group = "CmpItemKind" .. kind
-        item.kind = icon
-        lsp(entry, item, true)
-        return item
-      end,
+    format = function(entry, item)
+      local icons = lspkind_icons
+      local icon = icons[item.kind] or ""
+      local kind = item.kind or ""
+      item.menu = kind
+      item.menu_hl_group = "CmpItemKind" .. kind
+      item.kind = icon
+      lsp(entry, item, kind)
+      return item
+    end,
     fields = { "kind", "abbr", "menu" },
   },
   window = {

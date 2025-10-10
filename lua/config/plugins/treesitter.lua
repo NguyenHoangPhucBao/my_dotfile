@@ -7,5 +7,6 @@ return {
     "luadoc",
     "json",
     "prisma",
+    "groovy"
   },
 }

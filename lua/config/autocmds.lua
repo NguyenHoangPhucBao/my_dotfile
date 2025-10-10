@@ -15,6 +15,7 @@ vim.api.nvim_create_autocmd("FileType", {
     "html",
     "css",
     "prisma",
+    "groovy"
   },
   callback = function()
     vim.treesitter.start()

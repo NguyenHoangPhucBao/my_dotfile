@@ -3,6 +3,7 @@ local x = vim.diagnostic.severity
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("ts_ls")
 vim.lsp.enable("biome")
+vim.lsp.enable("tailwindcss")
 
 local hover = function()
   vim.lsp.buf.hover({
